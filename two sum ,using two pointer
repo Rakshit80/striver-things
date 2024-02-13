@@ -1,0 +1,22 @@
+#include <iostream> 
+using namespace std;
+
+int main()
+{ 
+    int left=0;
+    int right=6; 
+    int arr[]={2,3,4,5,8,9,11}; 
+    int sum=0;  
+  int  n=14; 
+    while(left<right){ 
+          if(sum==n) 
+         return 1;
+         sum=arr[left]+arr[right]; 
+         
+         if(sum>n)right-- ; 
+        
+         else{left++;} 
+   
+      }
+      return 0;
+}
